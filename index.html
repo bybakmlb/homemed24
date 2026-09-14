@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeMed24 — медсестра на дом в Таразе, 24/7</title>
+<meta name="description" content="Медсестра на дом в Таразе круглосуточно: капельницы, уколы, снятие алкогольной интоксикации, перевязки, уход за лежачими. Стаж более 10 лет. ☎ +7 707 453 7592, +7 707 261 6103 (WhatsApp)">
+<meta property="og:title" content="HomeMed24 — медсестра на дом в Таразе, 24/7">
+<meta property="og:description" content="Капельницы, уколы, перевязки, уход за лежачими. Выезд по Таразу круглосуточно. +7 707 453 7592">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b5d5b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b5d5b'/%3E%3Cpath d='M26 14h12v12h12v12H38v12H26V38H14V26h12z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "HomeMed24",
+  "description": "Медсестра на дом в Таразе, круглосуточно",
+  "telephone": ["+77074537592", "+77072616103"],
+  "areaServed": "Тараз",
+  "address": {"@type": "PostalAddress", "addressLocality": "Тараз", "addressCountry": "KZ"},
+  "openingHours": "Mo-Su 00:00-24:00"
+}
+</script>
+
+<style>
+  :root {
+    --teal: #0b5d5b;
+    --teal-dark: #073f3e;
+    --teal-soft: #e3f1ee;
+    --mint: #f3f9f7;
+    --ink: #14211f;
+    --muted: #5b6b68;
+    --line: #d6e5e1;
+    --coral: #e8553f;
+    --wa: #1faa55;
+    --white: #ffffff;
+    --radius: 20px;
+    --shadow: 0 10px 30px -12px rgba(11, 93, 91, .25);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .logo { font-family: "Montserrat", "Inter", system-ui, sans-serif; line-height: 1.15; margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding-inline: 20px; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 24px; height: 68px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 800; text-decoration: none; color: var(--teal-dark); }
+  .logo svg { width: 36px; height: 36px; flex: none; }
+  .logo span { color: var(--coral); }
+  nav { display: flex; gap: 22px; margin-left: auto; }
+  nav a { text-decoration: none; font-weight: 500; color: var(--muted); font-size: 15px; }
+  nav a:hover { color: var(--teal); }
+  .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+  .lang button {
+    border: 0; background: none; cursor: pointer; font: 600 13px/1 "Inter", sans-serif;
+    padding: 7px 11px; border-radius: 999px; color: var(--muted);
+  }
+  .lang button.active { background: var(--teal); color: #fff; }
+  .head-phone { font-weight: 700; text-decoration: none; color: var(--teal-dark); white-space: nowrap; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 15px 24px; border-radius: 14px; font-weight: 700; font-size: 16px;
+    text-decoration: none; transition: transform .15s ease, box-shadow .15s ease, background .15s;
+    white-space: nowrap;
+  }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-call { background: var(--teal); color: #fff; box-shadow: var(--shadow); }
+  .btn-call:hover { background: var(--teal-dark); }
+  .btn-wa { background: var(--wa); color: #fff; box-shadow: 0 10px 30px -12px rgba(31,170,85,.5); }
+  .btn-wa:hover { background: #178a45; }
+
+  /* ---------- Hero ---------- */
+  .hero { background: linear-gradient(180deg, var(--mint), #fff); padding-block: 64px 72px; overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff; border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; font-weight: 600; color: var(--teal);
+  }
+  .pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--wa); box-shadow: 0 0 0 4px rgba(31,170,85,.18); }
+  .hero h1 { font-size: clamp(34px, 5.2vw, 58px); font-weight: 800; margin-top: 18px; color: var(--teal-dark); letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; color: var(--coral); }
+  .hero p.lead { font-size: 19px; color: var(--muted); margin: 18px 0 30px; max-width: 540px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 40px; }
+  .stat b { display: block; font-family: "Montserrat", sans-serif; font-size: 30px; color: var(--teal); line-height: 1.1; }
+  .stat span { font-size: 14px; color: var(--muted); }
+
+  .hero-card {
+    background: #fff; border-radius: 28px; padding: 30px; box-shadow: var(--shadow);
+    border: 1px solid var(--line); position: relative;
+  }
+  .hero-card::before {
+    content: ""; position: absolute; inset: -40px -60px auto auto; width: 180px; height: 180px;
+    background: radial-gradient(circle, rgba(232,85,63,.18), transparent 70%); z-index: -1;
+  }
+  .hero-card h3 { font-size: 20px; color: var(--teal-dark); margin-bottom: 18px; }
+  .check { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 12px; }
+  .check li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
+  .check svg { width: 22px; height: 22px; flex: none; color: var(--teal); margin-top: 1px; }
+  .hero-card .big-phone {
+    display: block; text-align: center; font-family: "Montserrat", sans-serif; font-weight: 800;
+    font-size: 26px; color: var(--teal-dark); text-decoration: none; padding: 14px;
+    background: var(--teal-soft); border-radius: 14px;
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding-block: 80px; }
+  .sec-head { max-width: 680px; margin-bottom: 44px; }
+  .eyebrow { font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--coral); }
+  .sec-head h2 { font-size: clamp(28px, 3.6vw, 42px); color: var(--teal-dark); margin-top: 8px; letter-spacing: -.01em; }
+  .sec-head p { color: var(--muted); font-size: 17px; margin: 12px 0 0; }
+
+  /* ---------- Services / prices ---------- */
+  .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .svc {
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 28px; display: flex; flex-direction: column; gap: 14px;
+    transition: box-shadow .2s, transform .2s, border-color .2s;
+  }
+  .svc:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: #b9d6cf; }
+  .svc .ico { width: 54px; height: 54px; border-radius: 16px; background: var(--teal-soft); color: var(--teal); display: grid; place-items: center; }
+  .svc .ico svg { width: 28px; height: 28px; }
+  .svc h3 { font-size: 21px; font-weight: 800; color: var(--teal-dark); }
+  .svc p { margin: 0; color: var(--muted); }
+  .price { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); }
+  .price-val { font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 800; color: var(--teal); white-space: nowrap; }
+  .price-val small { font-size: 16px; font-weight: 700; color: var(--muted); }
+  .rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; margin-top: auto; }
+  .rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+  .rows li span:first-child { font-weight: 600; }
+  .rows .price-val { font-size: 24px; }
+
+  .svc.featured { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+  .svc.featured h3, .svc.featured .price-val { color: #fff; }
+  .svc.featured p, .svc.featured .price-val small { color: #bfe0da; }
+  .svc.featured .ico { background: rgba(255,255,255,.12); color: #fff; }
+  .svc.featured .price { border-color: rgba(255,255,255,.25); }
+  .tag { align-self: flex-start; background: var(--coral); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: .05em; }
+
+  .notice {
+    margin-top: 28px; display: flex; gap: 18px; align-items: center;
+    background: #fff4f1; border: 2px solid #f6c3b8; border-radius: var(--radius); padding: 24px 28px;
+  }
+  .notice svg { width: 40px; height: 40px; flex: none; color: var(--coral); }
+  .notice strong { font-family: "Montserrat", sans-serif; font-size: clamp(18px, 2.2vw, 24px); font-weight: 800; color: #9c2f1f; line-height: 1.3; }
+
+  /* ---------- Steps ---------- */
+  .steps-sec { background: var(--mint); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
+  .step { background: #fff; border-radius: var(--radius); padding: 28px; border: 1px solid var(--line); }
+  .step::before {
+    counter-increment: s; content: counter(s);
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+    background: var(--coral); color: #fff; font: 800 20px "Montserrat", sans-serif; margin-bottom: 16px;
+  }
+  .step h3 { font-size: 19px; color: var(--teal-dark); margin-bottom: 6px; }
+  .step p { margin: 0; color: var(--muted); }
+
+  /* ---------- Education ---------- */
+  .edu-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: start; }
+  .exp {
+    background: var(--teal); color: #fff; border-radius: 28px; padding: 36px; position: sticky; top: 100px;
+  }
+  .exp b { font-family: "Montserrat", sans-serif; font-size: 72px; line-height: 1; display: block; }
+  .exp p { font-size: 18px; margin: 10px 0 0; color: #d5ece8; }
+  .exp ul { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 10px; border-top: 1px solid rgba(255,255,255,.2); padding-top: 22px; }
+  .exp li { display: flex; gap: 10px; }
+  .exp li svg { width: 20px; height: 20px; flex: none; margin-top: 3px; }
+
+  .timeline { position: relative; display: grid; gap: 20px; padding-left: 34px; }
+  .timeline::before { content: ""; position: absolute; left: 10px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+  .t-item { position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+  .t-item::before {
+    content: ""; position: absolute; left: -31px; top: 26px; width: 16px; height: 16px; border-radius: 50%;
+    background: #fff; border: 4px solid var(--teal);
+  }
+  .t-item.top::before { border-color: var(--coral); }
+  .t-year { font-weight: 700; color: var(--coral); font-size: 14px; letter-spacing: .03em; }
+  .t-item h3 { font-size: 18px; color: var(--teal-dark); margin: 4px 0 8px; }
+  .t-item p { margin: 0; color: var(--muted); font-size: 15px; }
+  .t-item .deg { display: inline-block; margin-top: 10px; background: var(--teal-soft); color: var(--teal-dark); font-weight: 600; font-size: 14px; padding: 4px 12px; border-radius: 999px; }
+
+  /* ---------- Contacts ---------- */
+  .contact-sec { background: var(--teal-dark); color: #fff; }
+  .contact-sec .sec-head h2 { color: #fff; }
+  .contact-sec .sec-head p { color: #bfe0da; }
+  .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .c-card {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius);
+    padding: 28px; text-decoration: none; display: flex; flex-direction: column; gap: 10px; transition: background .2s;
+  }
+  a.c-card:hover { background: rgba(255,255,255,.12); }
+  .c-card a.val { text-decoration: none; }
+  .c-card a.val:hover { color: #7fd3c4; }
+  .c-card svg { width: 32px; height: 32px; color: #7fd3c4; }
+  .c-card .lbl { color: #bfe0da; font-size: 14px; }
+  .c-card .val { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 22px; line-height: 1.25; }
+  .contact-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .contact-cta .btn-call { background: #fff; color: var(--teal-dark); }
+
+  footer { background: #052e2d; color: #8fb8b1; font-size: 14px; padding-block: 28px 28px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+
+  /* ---------- Floating & mobile bar ---------- */
+  .fab {
+    position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 60px; height: 60px; border-radius: 50%;
+    background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    animation: pulse 2.4s infinite;
+  }
+  .fab svg { width: 32px; height: 32px; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(31,170,85,.55)} 70%{box-shadow:0 0 0 16px rgba(31,170,85,0)} 100%{box-shadow:0 0 0 0 rgba(31,170,85,0)} }
+  .mbar { display: none; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 980px) {
+    nav { display: none; }
+    .lang { margin-left: auto; }
+    .hero-grid, .edu-grid { grid-template-columns: 1fr; }
+    .services, .contact-grid { grid-template-columns: 1fr 1fr; }
+    .exp { position: static; }
+  }
+  @media (max-width: 680px) {
+    body { padding-bottom: 76px; }
+    .head-phone { display: none; }
+    .hero { padding-block: 40px 52px; }
+    .hero p.lead { font-size: 17px; }
+    .cta .btn { flex: 1 1 100%; }
+    .stats { gap: 20px; }
+    .stat b { font-size: 26px; }
+    section { padding-block: 56px; }
+    .services, .steps, .contact-grid { grid-template-columns: 1fr; }
+    .svc, .step, .hero-card, .exp { padding: 22px; }
+    .notice { flex-direction: column; align-items: flex-start; padding: 20px; }
+    .fab { display: none; }
+    .mbar {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid var(--line);
+      box-shadow: 0 -8px 20px rgba(0,0,0,.06);
+    }
+    .mbar .btn { padding: 13px 10px; font-size: 15px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<!-- ===== SVG icons ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5a.6.6 0 0 0 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.4zM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.8zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" opacity=".25"/><path d="m7.5 12.5 3 3 6-6.5"/></symbol>
+  <symbol id="i-drip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="11" rx="2"/><path d="M12 13v3m0 0c-1.5 2-2 3-2 4a2 2 0 0 0 4 0c0-1-.5-2-2-4zM10 6h4"/></symbol>
+  <symbol id="i-syringe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3a2 2 0 0 1-2.8 0l-1.2-1.2a2 2 0 0 1 0-2.8L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/></symbol>
+  <symbol id="i-band" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="8" width="21" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M10 10h.01M14 14h.01M10 14h.01M14 10h.01"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/><path d="M3.2 12H8l1.5-3 3 6 1.5-3h4.8"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v7.5L4 19a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 19l-5-9.5V2M8 2h8M7 15h10"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5M22 10v6"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="18" fill="#0b5d5b"/><path d="M26 14h12v12h12v12H38v12H26V38H14V26h12z" fill="#fff"/><circle cx="50" cy="14" r="7" fill="#e8553f"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="logo" aria-label="HomeMed24"><svg><use href="#i-logo"/></svg>HomeMed<span>24</span></a>
+    <nav>
+      <a href="#services" data-i18n="nav_services">Услуги и цены</a>
+      <a href="#how" data-i18n="nav_how">Как заказать</a>
+      <a href="#education" data-i18n="nav_edu">Образование</a>
+      <a href="#contacts" data-i18n="nav_contacts">Контакты</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ru" class="active">RU</button>
+      <button type="button" data-lang="kz">KZ</button>
+    </div>
+    <a class="head-phone" href="tel:+77074537592">+7 707 453 75 92</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill"><i></i><span data-i18n="hero_pill">Тараз · круглосуточно 24/7</span></span>
+        <h1 data-i18n="hero_title">Медсестра на дом <em>в Таразе</em></h1>
+        <p class="lead" data-i18n="hero_lead">Капельницы, уколы, снятие алкогольной интоксикации, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.</p>
+        <div class="cta">
+          <a class="btn btn-call" href="tel:+77074537592"><svg><use href="#i-phone"/></svg><span data-i18n="btn_call">Позвонить</span></a>
+          <a class="btn btn-wa wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="btn_wa">Написать в WhatsApp</span></a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>10+</b><span data-i18n="stat_exp">лет стажа</span></div>
+          <div class="stat"><b>24/7</b><span data-i18n="stat_247">без выходных</span></div>
+          <div class="stat"><b data-i18n="stat_edu_b">Высшее</b><span data-i18n="stat_edu">сестринское образование</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3 data-i18n="card_title">Почему выбирают нас</h3>
+        <ul class="check">
+          <li><svg><use href="#i-check"/></svg><span data-i18n="card_1">Бакалавр сестринского дела (КазНМУ)</span></li>
+          <li><svg><use href="#i-check"/></svg><span data-i18n="card_2">Более 10 лет практики</span></li>
+          <li><svg><use href="#i-check"/></svg><span data-i18n="card_3">Выезд по всему Таразу днём и ночью</span></li>
+          <li><svg><use href="#i-check"/></svg><span data-i18n="card_4">Аккуратно, конфиденциально, без очередей</span></li>
+        </ul>
+        <a class="big-phone" href="tel:+77074537592">+7 707 453 75 92</a>
+        <a class="big-phone" href="tel:+77072616103" style="margin-top:10px">+7 707 261 61 03</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES & PRICES ===== -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="svc_eyebrow">Прайс-лист</div>
+        <h2 data-i18n="svc_title">Услуги и цены</h2>
+        <p data-i18n="svc_sub">Указаны минимальные цены за выезд на дом в пределах города Тараз.</p>
+      </div>
+
+      <div class="services">
+        <article class="svc featured">
+          <span class="tag" data-i18n="tag_247">24/7</span>
+          <div class="ico"><svg><use href="#i-drip"/></svg></div>
+          <h3 data-i18n="s1_title">Снятие алкогольной интоксикации</h3>
+          <p data-i18n="s1_desc">Капельница для вывода из запоя и снятия похмельного синдрома на дому. Анонимно.</p>
+          <div class="price"><span class="price-val" data-price="15000"></span></div>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg><use href="#i-syringe"/></svg></div>
+          <h3 data-i18n="s2_title">Уколы и капельницы</h3>
+          <ul class="rows">
+            <li><span data-i18n="s2_im">В/м инъекции</span><span class="price-val" data-price="5000"></span></li>
+            <li><span data-i18n="s2_iv">В/в инъекции</span><span class="price-val" data-price="5000"></span></li>
+            <li><span data-i18n="s2_drip">Капельница на дому</span><span class="price-val" data-price="4000"></span></li>
+          </ul>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg><use href="#i-band"/></svg></div>
+          <h3 data-i18n="s3_title">Перевязки и уход за ранами</h3>
+          <p data-i18n="s3_desc">Обработка ран, снятие швов, лечение пролежней.</p>
+          <div class="price"><span class="price-val" data-price="5000"></span></div>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg><use href="#i-bed"/></svg></div>
+          <h3 data-i18n="s4_title">Уход за лежачими больными</h3>
+          <p data-i18n="s4_desc">Гигиена, катетеры, помощь пожилым. Выезд на несколько часов или на сутки.</p>
+          <div class="price"><span class="price-val" data-price="7000"></span></div>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg><use href="#i-heart"/></svg></div>
+          <h3 data-i18n="s5_title">Давление и сахар</h3>
+          <p data-i18n="s5_desc">Измерение артериального давления и уровня сахара в крови.</p>
+          <div class="price"><span class="price-val" data-price="3000"></span></div>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg><use href="#i-flask"/></svg></div>
+          <h3 data-i18n="s6_title">Клизма</h3>
+          <p data-i18n="s6_desc">Очистительная клизма на дому, деликатно и аккуратно.</p>
+          <div class="price"><span class="price-val" data-price="7000"></span></div>
+        </article>
+      </div>
+
+      <div class="notice">
+        <svg><use href="#i-info"/></svg>
+        <strong data-i18n="notice">Итоговая цена рассчитывается индивидуально — в зависимости от количества препаратов.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW ===== -->
+  <section id="how" class="steps-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="how_eyebrow">Всё просто</div>
+        <h2 data-i18n="how_title">Как вызвать медсестру</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3 data-i18n="st1_t">Позвоните или напишите</h3><p data-i18n="st1_d">По телефону или в WhatsApp — в любое время суток.</p></div>
+        <div class="step"><h3 data-i18n="st2_t">Согласуем детали</h3><p data-i18n="st2_d">Уточним процедуру, препараты, адрес и стоимость.</p></div>
+        <div class="step"><h3 data-i18n="st3_t">Медсестра приедет к вам</h3><p data-i18n="st3_d">Выполнит процедуру дома, в спокойной и комфортной обстановке.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="edu_eyebrow">Квалификация</div>
+        <h2 data-i18n="edu_title">Образование и опыт</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="exp">
+          <b>10+</b>
+          <p data-i18n="exp_text">лет стажа в сфере сестринского и медицинского дела</p>
+          <ul>
+            <li><svg><use href="#i-cap"/></svg><span data-i18n="exp_1">Высшее образование — бакалавр здравоохранения</span></li>
+            <li><svg><use href="#i-cap"/></svg><span data-i18n="exp_2">Два медицинских колледжа</span></li>
+          </ul>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item top">
+            <div class="t-year">2022</div>
+            <h3 data-i18n="e3_t">Казахский национальный медицинский университет имени С.Д. Асфендиярова, г. Алматы</h3>
+            <p data-i18n="e3_d">Бакалавриат, специальность B084 «Сестринское дело» (Nursing), полное очное обучение. Решение ГАК от 24 июня 2022 г.</p>
+            <span class="deg" data-i18n="e3_deg">Бакалавр здравоохранения</span>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2019 – 2021</div>
+            <h3 data-i18n="e2_t">Жамбылский медицинский колледж (ЖГЭК КМК)</h3>
+            <p data-i18n="e2_d">Специальность 0302000 «Сестринское дело». Диплом ОБКБ № 0010906.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2012 – 2016</div>
+            <h3 data-i18n="e1_t">Медицинский колледж, Жамбылская область</h3>
+            <p data-i18n="e1_d">Специальность 0301000 «Лечебное дело / Сестринское дело». Диплом технического и профессионального образования, рег. № 1253/2016.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS ===== -->
+  <section id="contacts" class="contact-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="c_eyebrow">Связаться</div>
+        <h2 data-i18n="c_title">Контакты</h2>
+        <p data-i18n="c_sub">Звоните или пишите в WhatsApp — ответим и приедем в любое время.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="c-card">
+          <svg><use href="#i-phone"/></svg>
+          <span class="lbl" data-i18n="c_phone">Телефон</span>
+          <a class="val" href="tel:+77074537592">+7 707 453 75 92</a>
+          <a class="val" href="tel:+77072616103">+7 707 261 61 03</a>
+        </div>
+        <a class="c-card wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener">
+          <svg><use href="#i-wa"/></svg>
+          <span class="lbl">WhatsApp</span>
+          <span class="val">+7 707 261 61 03</span>
+        </a>
+        <div class="c-card">
+          <svg><use href="#i-clock"/></svg>
+          <span class="lbl" data-i18n="c_where">Город и график</span>
+          <span class="val" data-i18n="c_where_v">г. Тараз<br>Круглосуточно 24/7</span>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <a class="btn btn-call" href="tel:+77074537592"><svg><use href="#i-phone"/></svg><span data-i18n="btn_call">Позвонить</span></a>
+        <a class="btn btn-wa wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="btn_wa">Написать в WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> HomeMed24 · <span data-i18n="f_city">Медсестра на дом, г. Тараз</span></span>
+    <span data-i18n="f_note">Инъекции и капельницы выполняются по назначению врача.</span>
+  </div>
+</footer>
+
+<a class="fab wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<div class="mbar">
+  <a class="btn btn-call" href="tel:+77074537592"><svg><use href="#i-phone"/></svg><span data-i18n="btn_call">Позвонить</span></a>
+  <a class="btn btn-wa wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+  var PHONE = "77072616103"; // WhatsApp
+
+  var I18N = {
+    ru: {
+      _title: "HomeMed24 — медсестра на дом в Таразе, 24/7",
+      _wa: "Здравствуйте! Хочу вызвать медсестру на дом.",
+      _from: "от", _after: "",
+      nav_services: "Услуги и цены", nav_how: "Как заказать", nav_edu: "Образование", nav_contacts: "Контакты",
+      hero_pill: "Тараз · круглосуточно 24/7",
+      hero_title: "Медсестра на дом <em>в Таразе</em>",
+      hero_lead: "Капельницы, уколы, снятие алкогольной интоксикации, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.",
+      btn_call: "Позвонить", btn_wa: "Написать в WhatsApp",
+      stat_exp: "лет стажа", stat_247: "без выходных", stat_edu_b: "Высшее", stat_edu: "сестринское образование",
+      card_title: "Почему выбирают нас",
+      card_1: "Бакалавр сестринского дела (КазНМУ)", card_2: "Более 10 лет практики",
+      card_3: "Выезд по всему Таразу днём и ночью", card_4: "Аккуратно, конфиденциально, без очередей",
+      svc_eyebrow: "Прайс-лист", svc_title: "Услуги и цены",
+      svc_sub: "Указаны минимальные цены за выезд на дом в пределах города Тараз.",
+      tag_247: "24/7",
+      s1_title: "Снятие алкогольной интоксикации", s1_desc: "Капельница для вывода из запоя и снятия похмельного синдрома на дому. Анонимно.",
+      s2_title: "Уколы и капельницы", s2_im: "В/м инъекции", s2_iv: "В/в инъекции", s2_drip: "Капельница на дому",
+      s3_title: "Перевязки и уход за ранами", s3_desc: "Обработка ран, снятие швов, лечение пролежней.",
+      s4_title: "Уход за лежачими больными", s4_desc: "Гигиена, катетеры, помощь пожилым. Выезд на несколько часов или на сутки.",
+      s5_title: "Давление и сахар", s5_desc: "Измерение артериального давления и уровня сахара в крови.",
+      s6_title: "Клизма", s6_desc: "Очистительная клизма на дому, деликатно и аккуратно.",
+      notice: "Итоговая цена рассчитывается индивидуально — в зависимости от количества препаратов.",
+      how_eyebrow: "Всё просто", how_title: "Как вызвать медсестру",
+      st1_t: "Позвоните или напишите", st1_d: "По телефону или в WhatsApp — в любое время суток.",
+      st2_t: "Согласуем детали", st2_d: "Уточним процедуру, препараты, адрес и стоимость.",
+      st3_t: "Медсестра приедет к вам", st3_d: "Выполнит процедуру дома, в спокойной и комфортной обстановке.",
+      edu_eyebrow: "Квалификация", edu_title: "Образование и опыт",
+      exp_text: "лет стажа в сфере сестринского и медицинского дела",
+      exp_1: "Высшее образование — бакалавр здравоохранения", exp_2: "Два медицинских колледжа",
+      e3_t: "Казахский национальный медицинский университет имени С.Д. Асфендиярова, г. Алматы",
+      e3_d: "Бакалавриат, специальность B084 «Сестринское дело» (Nursing), полное очное обучение. Решение ГАК от 24 июня 2022 г.",
+      e3_deg: "Бакалавр здравоохранения",
+      e2_t: "Жамбылский медицинский колледж (ЖГЭК КМК)",
+      e2_d: "Специальность 0302000 «Сестринское дело». Диплом ОБКБ № 0010906.",
+      e1_t: "Медицинский колледж, Жамбылская область",
+      e1_d: "Специальность 0301000 «Лечебное дело / Сестринское дело». Диплом технического и профессионального образования, рег. № 1253/2016.",
+      c_eyebrow: "Связаться", c_title: "Контакты",
+      c_sub: "Звоните или пишите в WhatsApp — ответим и приедем в любое время.",
+      c_phone: "Телефон", c_where: "Город и график", c_where_v: "г. Тараз<br>Круглосуточно 24/7",
+      f_city: "Медсестра на дом, г. Тараз", f_note: "Инъекции и капельницы выполняются по назначению врача."
+    },
+    kz: {
+      _title: "HomeMed24 — Таразда үйге мейірбике шақыру, 24/7",
+      _wa: "Сәлеметсіз бе! Үйге мейірбике шақырғым келеді.",
+      _from: "", _after: "бастап",
+      nav_services: "Қызметтер мен бағалар", nav_how: "Қалай шақыру", nav_edu: "Білімі", nav_contacts: "Байланыс",
+      hero_pill: "Тараз · тәулік бойы 24/7",
+      hero_title: "Үйге мейірбике <em>Таразда</em>",
+      hero_lead: "Тамшылатқыш, ине салу, алкогольдік интоксикацияны басу, жараны таңу және төсекте жатқан науқастарға күтім — үйіңізде, күндіз-түні.",
+      btn_call: "Қоңырау шалу", btn_wa: "WhatsApp-қа жазу",
+      stat_exp: "жыл тәжірибе", stat_247: "демалыссыз", stat_edu_b: "Жоғары", stat_edu: "мейірбикелік білім",
+      card_title: "Неліктен бізді таңдайды",
+      card_1: "Мейірбике ісінің бакалавры (ҚазҰМУ)", card_2: "10 жылдан астам тәжірибе",
+      card_3: "Тараз қаласының барлық аудандарына күндіз-түні барамыз", card_4: "Ұқыпты, құпия, кезексіз",
+      svc_eyebrow: "Баға тізімі", svc_title: "Қызметтер мен бағалар",
+      svc_sub: "Тараз қаласы шегінде үйге барудың ең төменгі бағалары көрсетілген.",
+      tag_247: "24/7",
+      s1_title: "Алкогольдік интоксикацияны басу", s1_desc: "Маскүнемдік пен бас ауру синдромын басуға арналған тамшылатқыш үйде. Анонимді.",
+      s2_title: "Ине салу және тамшылатқыш", s2_im: "Бұлшықетке ине салу", s2_iv: "Көктамырға ине салу", s2_drip: "Үйде тамшылатқыш қою",
+      s3_title: "Таңу және жараға күтім", s3_desc: "Жараны өңдеу, тігісті алу, ойық жараларды емдеу.",
+      s4_title: "Төсекте жатқан науқастарға күтім", s4_desc: "Гигиена, катетер, қарттарға көмек. Бірнеше сағатқа немесе тәулікке шақыру.",
+      s5_title: "Қан қысымы және қант", s5_desc: "Артериялық қысымды және қандағы қант деңгейін өлшеу.",
+      s6_title: "Клизма", s6_desc: "Үйде тазарту клизмасы, ұқыпты әрі нәзік.",
+      notice: "Қорытынды баға препараттардың санына байланысты жеке есептеледі.",
+      how_eyebrow: "Бәрі оңай", how_title: "Мейірбикені қалай шақыруға болады",
+      st1_t: "Қоңырау шалыңыз немесе жазыңыз", st1_d: "Телефон немесе WhatsApp арқылы — тәуліктің кез келген уақытында.",
+      st2_t: "Мәліметтерді келісеміз", st2_d: "Процедураны, препараттарды, мекенжайды және бағаны нақтылаймыз.",
+      st3_t: "Мейірбике сізге келеді", st3_d: "Процедураны үйде, тыныш әрі жайлы жағдайда жасайды.",
+      edu_eyebrow: "Біліктілік", edu_title: "Білімі мен тәжірибесі",
+      exp_text: "жыл мейірбике және медицина саласындағы еңбек өтілі",
+      exp_1: "Жоғары білім — денсаулық сақтау бакалавры", exp_2: "Екі медициналық колледж",
+      e3_t: "С.Ж. Асфендияров атындағы Қазақ ұлттық медицина университеті, Алматы қ.",
+      e3_d: "Бакалавриат, B084 «Мейірбике ісі» (Nursing) мамандығы, толық күндізгі оқу. МАК шешімі 2022 жылғы 24 маусым.",
+      e3_deg: "Денсаулық сақтау бакалавры",
+      e2_t: "Жамбыл медициналық колледжі (ЖГЭК КМК)",
+      e2_d: "0302000 «Мейірбике ісі» мамандығы. ОБКБ № 0010906 дипломы.",
+      e1_t: "Медициналық колледж, Жамбыл облысы",
+      e1_d: "0301000 «Емдеу ісі / Мейірбике ісі» мамандығы. Техникалық және кәсіптік білім туралы диплом, тіркеу № 1253/2016.",
+      c_eyebrow: "Хабарласу", c_title: "Байланыс",
+      c_sub: "Қоңырау шалыңыз немесе WhatsApp-қа жазыңыз — кез келген уақытта жауап беріп, келеміз.",
+      c_phone: "Телефон", c_where: "Қала және кесте", c_where_v: "Тараз қ.<br>Тәулік бойы 24/7",
+      f_city: "Үйге мейірбике шақыру, Тараз қ.", f_note: "Ине салу мен тамшылатқыш дәрігердің тағайындауы бойынша жасалады."
+    }
+  };
+
+  function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " "); }
+
+  function setLang(lang) {
+    var d = I18N[lang] || I18N.ru;
+    document.documentElement.lang = lang === "kz" ? "kk" : "ru";
+    document.title = d._title;
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      if (d[k] != null) el.innerHTML = d[k];
+    });
+
+    document.querySelectorAll("[data-price]").forEach(function (el) {
+      var v = fmt(el.getAttribute("data-price")) + " ₸";
+      el.innerHTML = (d._from ? "<small>" + d._from + "</small> " : "") + v + (d._after ? " <small>" + d._after + "</small>" : "");
+    });
+
+    var wa = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(d._wa);
+    document.querySelectorAll(".wa-link").forEach(function (a) { a.href = wa; });
+
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+    });
+
+    try { localStorage.setItem("hm24-lang", lang); } catch (e) {}
+  }
+
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var saved = "ru";
+  try { saved = localStorage.getItem("hm24-lang") || "ru"; } catch (e) {}
+  setLang(saved);
+</script>
+</body>
+</html>
