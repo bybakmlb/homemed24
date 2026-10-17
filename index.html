@@ -4,10 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HomeMed24 — медсестра на дом в Таразе, 24/7</title>
-<meta name="description" content="Медсестра на дом в Таразе круглосуточно: капельницы, уколы, снятие алкогольной интоксикации, перевязки, уход за лежачими. Стаж более 10 лет. ☎ +7 707 453 7592, +7 707 261 6103 (WhatsApp)">
+<meta name="description" content="Медсестра на дом в Таразе круглосуточно: детокс-капельница и вывод из запоя, капельницы, уколы, перевязки, уход за лежачими. Стаж более 10 лет. ☎ +7 707 453 7592, +7 707 261 6103 (WhatsApp)">
+<link rel="canonical" href="https://bybakmlb.github.io/homemed24/">
+<link rel="alternate" hreflang="ru" href="https://bybakmlb.github.io/homemed24/">
+<link rel="alternate" hreflang="kk" href="https://bybakmlb.github.io/homemed24/?lang=kz">
+<link rel="alternate" hreflang="x-default" href="https://bybakmlb.github.io/homemed24/">
 <meta property="og:title" content="HomeMed24 — медсестра на дом в Таразе, 24/7">
-<meta property="og:description" content="Капельницы, уколы, перевязки, уход за лежачими. Выезд по Таразу круглосуточно. +7 707 453 7592">
+<meta property="og:description" content="Капельницы, детокс, уколы, перевязки, уход за лежачими. Выезд по Таразу круглосуточно. +7 707 453 7592">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://bybakmlb.github.io/homemed24/">
+<meta property="og:image" content="https://bybakmlb.github.io/homemed24/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b5d5b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b5d5b'/%3E%3Cpath d='M26 14h12v12h12v12H38v12H26V38H14V26h12z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +29,31 @@
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "HomeMed24",
-  "description": "Медсестра на дом в Таразе, круглосуточно",
+  "description": "Медсестра на дом в Таразе, круглосуточно: капельницы, детокс, уколы, перевязки, уход за лежачими",
+  "url": "https://bybakmlb.github.io/homemed24/",
+  "image": "https://bybakmlb.github.io/homemed24/og.png",
   "telephone": ["+77074537592", "+77072616103"],
-  "areaServed": "Тараз",
-  "address": {"@type": "PostalAddress", "addressLocality": "Тараз", "addressCountry": "KZ"},
+  "priceRange": "3000–15000 ₸",
+  "currenciesAccepted": "KZT",
+  "areaServed": {"@type": "City", "name": "Тараз"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Тараз", "addressRegion": "Жамбылская область", "addressCountry": "KZ"},
   "openingHours": "Mo-Su 00:00-24:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Сколько стоит детокс-капельница на дому в Таразе?",
+     "acceptedAnswer": {"@type": "Answer", "text": "От 15 000 ₸. Итоговая цена зависит от состава и количества препаратов."}},
+    {"@type": "Question", "name": "Как быстро приедет медсестра?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Выезжаем по всему Таразу круглосуточно. Точное время прибытия сообщим по телефону или в WhatsApp."}},
+    {"@type": "Question", "name": "Это анонимно?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Да. Мы никуда не передаём данные о вызове, процедура проходит у вас дома."}},
+    {"@type": "Question", "name": "Сколько длится капельница?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Обычно 40–90 минут, всё это время медсестра находится рядом и следит за состоянием."}}
+  ]
 }
 </script>
 
@@ -169,6 +199,19 @@
   .notice svg { width: 40px; height: 40px; flex: none; color: var(--coral); }
   .notice strong { font-family: "Montserrat", sans-serif; font-size: clamp(18px, 2.2vw, 24px); font-weight: 800; color: #9c2f1f; line-height: 1.3; }
 
+  /* ---------- Detox ---------- */
+  .detox-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: start; }
+  .detox-text p { color: var(--muted); font-size: 17px; margin: 0 0 16px; }
+  .detox-text .check li { font-weight: 500; }
+  .warn { margin-top: 8px; font-size: 15px; color: #9c2f1f; background: #fff4f1; border-radius: 14px; padding: 14px 18px; }
+  .faq { display: grid; gap: 12px; }
+  .faq details { border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; background: #fff; }
+  .faq summary { font-weight: 700; color: var(--teal-dark); cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; color: var(--coral); font-size: 22px; line-height: 1; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq p { margin: 10px 0 0; color: var(--muted); }
+
   /* ---------- Steps ---------- */
   .steps-sec { background: var(--mint); }
   .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
@@ -240,7 +283,7 @@
   @media (max-width: 980px) {
     nav { display: none; }
     .lang { margin-left: auto; }
-    .hero-grid, .edu-grid { grid-template-columns: 1fr; }
+    .hero-grid, .edu-grid, .detox-grid { grid-template-columns: 1fr; }
     .services, .contact-grid { grid-template-columns: 1fr 1fr; }
     .exp { position: static; }
   }
@@ -289,9 +332,10 @@
 
 <header>
   <div class="wrap bar">
-    <a href="#top" class="logo" aria-label="HomeMed24"><svg><use href="#i-logo"/></svg>HomeMed<span>24</span></a>
+    <a href="#top" class="logo" aria-label="HomeMed24"><svg><use href="#i-logo"/></svg><b>HomeMed<span>24</span></b></a>
     <nav>
       <a href="#services" data-i18n="nav_services">Услуги и цены</a>
+      <a href="#detox" data-i18n="nav_detox">Детокс</a>
       <a href="#how" data-i18n="nav_how">Как заказать</a>
       <a href="#education" data-i18n="nav_edu">Образование</a>
       <a href="#contacts" data-i18n="nav_contacts">Контакты</a>
@@ -312,7 +356,7 @@
       <div>
         <span class="pill"><i></i><span data-i18n="hero_pill">Тараз · круглосуточно 24/7</span></span>
         <h1 data-i18n="hero_title">Медсестра на дом <em>в Таразе</em></h1>
-        <p class="lead" data-i18n="hero_lead">Капельницы, уколы, снятие алкогольной интоксикации, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.</p>
+        <p class="lead" data-i18n="hero_lead">Капельницы, детокс и снятие алкогольной интоксикации, уколы, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.</p>
         <div class="cta">
           <a class="btn btn-call" href="tel:+77074537592"><svg><use href="#i-phone"/></svg><span data-i18n="btn_call">Позвонить</span></a>
           <a class="btn btn-wa wa-link" href="https://wa.me/77072616103" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="btn_wa">Написать в WhatsApp</span></a>
@@ -351,18 +395,18 @@
         <article class="svc featured">
           <span class="tag" data-i18n="tag_247">24/7</span>
           <div class="ico"><svg><use href="#i-drip"/></svg></div>
-          <h3 data-i18n="s1_title">Снятие алкогольной интоксикации</h3>
-          <p data-i18n="s1_desc">Капельница для вывода из запоя и снятия похмельного синдрома на дому. Анонимно.</p>
-          <div class="price"><span class="price-val" data-price="15000"></span></div>
+          <h3 data-i18n="s1_title">Детокс-капельница и снятие интоксикации</h3>
+          <p data-i18n="s1_desc">Капельница от запоя и похмелья на дому: вывод из запоя, снятие абстинентного синдрома. Анонимно.</p>
+          <div class="price"><span class="price-val" data-price="15000"><small>от</small> 15 000 ₸</span></div>
         </article>
 
         <article class="svc">
           <div class="ico"><svg><use href="#i-syringe"/></svg></div>
           <h3 data-i18n="s2_title">Уколы и капельницы</h3>
           <ul class="rows">
-            <li><span data-i18n="s2_im">В/м инъекции</span><span class="price-val" data-price="5000"></span></li>
-            <li><span data-i18n="s2_iv">В/в инъекции</span><span class="price-val" data-price="5000"></span></li>
-            <li><span data-i18n="s2_drip">Капельница на дому</span><span class="price-val" data-price="4000"></span></li>
+            <li><span data-i18n="s2_im">В/м инъекции</span><span class="price-val" data-price="5000"><small>от</small> 5 000 ₸</span></li>
+            <li><span data-i18n="s2_iv">В/в инъекции</span><span class="price-val" data-price="5000"><small>от</small> 5 000 ₸</span></li>
+            <li><span data-i18n="s2_drip">Капельница на дому</span><span class="price-val" data-price="4000"><small>от</small> 4 000 ₸</span></li>
           </ul>
         </article>
 
@@ -370,28 +414,28 @@
           <div class="ico"><svg><use href="#i-band"/></svg></div>
           <h3 data-i18n="s3_title">Перевязки и уход за ранами</h3>
           <p data-i18n="s3_desc">Обработка ран, снятие швов, лечение пролежней.</p>
-          <div class="price"><span class="price-val" data-price="5000"></span></div>
+          <div class="price"><span class="price-val" data-price="5000"><small>от</small> 5 000 ₸</span></div>
         </article>
 
         <article class="svc">
           <div class="ico"><svg><use href="#i-bed"/></svg></div>
           <h3 data-i18n="s4_title">Уход за лежачими больными</h3>
           <p data-i18n="s4_desc">Гигиена, катетеры, помощь пожилым. Выезд на несколько часов или на сутки.</p>
-          <div class="price"><span class="price-val" data-price="7000"></span></div>
+          <div class="price"><span class="price-val" data-price="7000"><small>от</small> 7 000 ₸</span></div>
         </article>
 
         <article class="svc">
           <div class="ico"><svg><use href="#i-heart"/></svg></div>
           <h3 data-i18n="s5_title">Давление и сахар</h3>
           <p data-i18n="s5_desc">Измерение артериального давления и уровня сахара в крови.</p>
-          <div class="price"><span class="price-val" data-price="3000"></span></div>
+          <div class="price"><span class="price-val" data-price="3000"><small>от</small> 3 000 ₸</span></div>
         </article>
 
         <article class="svc">
           <div class="ico"><svg><use href="#i-flask"/></svg></div>
           <h3 data-i18n="s6_title">Клизма</h3>
           <p data-i18n="s6_desc">Очистительная клизма на дому, деликатно и аккуратно.</p>
-          <div class="price"><span class="price-val" data-price="7000"></span></div>
+          <div class="price"><span class="price-val" data-price="7000"><small>от</small> 7 000 ₸</span></div>
         </article>
       </div>
 
@@ -402,8 +446,49 @@
     </div>
   </section>
 
+  <!-- ===== DETOX ===== -->
+  <section id="detox" class="steps-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="dx_eyebrow">Анонимно · 24/7</div>
+        <h2 data-i18n="dx_title">Детокс-капельница на дому в Таразе</h2>
+        <p data-i18n="dx_sub">Вывод из запоя, капельница от похмелья и снятие интоксикации — без поездок в клинику и очередей.</p>
+      </div>
+      <div class="detox-grid">
+        <div class="detox-text">
+          <p data-i18n="dx_p1">Если нужно «прокапаться» после застолья или выйти из запоя, медсестра приедет к вам домой в любое время суток. Капельница помогает вывести токсины, восстановить водно-солевой баланс и снять симптомы похмелья: слабость, тошноту, головную боль, дрожь, бессонницу.</p>
+          <ul class="check">
+            <li><svg><use href="#i-check"/></svg><span data-i18n="dx_l1">Выезд по всему Таразу днём и ночью</span></li>
+            <li><svg><use href="#i-check"/></svg><span data-i18n="dx_l2">Перед процедурой — измерение давления, пульса и сахара</span></li>
+            <li><svg><use href="#i-check"/></svg><span data-i18n="dx_l3">Медсестра остаётся рядом всё время капельницы</span></li>
+            <li><svg><use href="#i-check"/></svg><span data-i18n="dx_l4">Полная конфиденциальность, без постановки на учёт</span></li>
+          </ul>
+          <p class="warn" data-i18n="dx_warn">При боли в груди, судорогах, потере сознания или галлюцинациях — сразу звоните в скорую помощь 103.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary data-i18n="fq1_q">Сколько стоит детокс-капельница?</summary>
+            <p data-i18n="fq1_a">От 15 000 ₸. Итоговая цена зависит от состава и количества препаратов — назовём её заранее по телефону.</p>
+          </details>
+          <details>
+            <summary data-i18n="fq2_q">Как быстро приедет медсестра?</summary>
+            <p data-i18n="fq2_a">Выезжаем по всему Таразу круглосуточно. Точное время прибытия сообщим при звонке или в WhatsApp.</p>
+          </details>
+          <details>
+            <summary data-i18n="fq3_q">Это анонимно?</summary>
+            <p data-i18n="fq3_a">Да. Мы никуда не передаём данные о вызове, процедура проходит у вас дома.</p>
+          </details>
+          <details>
+            <summary data-i18n="fq4_q">Сколько длится капельница?</summary>
+            <p data-i18n="fq4_a">Обычно 40–90 минут. Всё это время медсестра рядом и следит за состоянием.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== HOW ===== -->
-  <section id="how" class="steps-sec">
+  <section id="how">
     <div class="wrap">
       <div class="sec-head">
         <div class="eyebrow" data-i18n="how_eyebrow">Всё просто</div>
@@ -510,12 +595,13 @@
   var I18N = {
     ru: {
       _title: "HomeMed24 — медсестра на дом в Таразе, 24/7",
+      _desc: "Медсестра на дом в Таразе круглосуточно: детокс-капельница и вывод из запоя, капельницы, уколы, перевязки, уход за лежачими. Стаж более 10 лет. ☎ +7 707 453 7592, +7 707 261 6103 (WhatsApp)",
       _wa: "Здравствуйте! Хочу вызвать медсестру на дом.",
       _from: "от", _after: "",
-      nav_services: "Услуги и цены", nav_how: "Как заказать", nav_edu: "Образование", nav_contacts: "Контакты",
+      nav_services: "Услуги и цены", nav_detox: "Детокс", nav_how: "Как заказать", nav_edu: "Образование", nav_contacts: "Контакты",
       hero_pill: "Тараз · круглосуточно 24/7",
       hero_title: "Медсестра на дом <em>в Таразе</em>",
-      hero_lead: "Капельницы, уколы, снятие алкогольной интоксикации, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.",
+      hero_lead: "Капельницы, детокс и снятие алкогольной интоксикации, уколы, перевязки и уход за лежачими больными — у вас дома, в любое время дня и ночи.",
       btn_call: "Позвонить", btn_wa: "Написать в WhatsApp",
       stat_exp: "лет стажа", stat_247: "без выходных", stat_edu_b: "Высшее", stat_edu: "сестринское образование",
       card_title: "Почему выбирают нас",
@@ -524,13 +610,23 @@
       svc_eyebrow: "Прайс-лист", svc_title: "Услуги и цены",
       svc_sub: "Указаны минимальные цены за выезд на дом в пределах города Тараз.",
       tag_247: "24/7",
-      s1_title: "Снятие алкогольной интоксикации", s1_desc: "Капельница для вывода из запоя и снятия похмельного синдрома на дому. Анонимно.",
+      s1_title: "Детокс-капельница и снятие интоксикации", s1_desc: "Капельница от запоя и похмелья на дому: вывод из запоя, снятие абстинентного синдрома. Анонимно.",
       s2_title: "Уколы и капельницы", s2_im: "В/м инъекции", s2_iv: "В/в инъекции", s2_drip: "Капельница на дому",
       s3_title: "Перевязки и уход за ранами", s3_desc: "Обработка ран, снятие швов, лечение пролежней.",
       s4_title: "Уход за лежачими больными", s4_desc: "Гигиена, катетеры, помощь пожилым. Выезд на несколько часов или на сутки.",
       s5_title: "Давление и сахар", s5_desc: "Измерение артериального давления и уровня сахара в крови.",
       s6_title: "Клизма", s6_desc: "Очистительная клизма на дому, деликатно и аккуратно.",
       notice: "Итоговая цена рассчитывается индивидуально — в зависимости от количества препаратов.",
+      dx_eyebrow: "Анонимно · 24/7", dx_title: "Детокс-капельница на дому в Таразе",
+      dx_sub: "Вывод из запоя, капельница от похмелья и снятие интоксикации — без поездок в клинику и очередей.",
+      dx_p1: "Если нужно «прокапаться» после застолья или выйти из запоя, медсестра приедет к вам домой в любое время суток. Капельница помогает вывести токсины, восстановить водно-солевой баланс и снять симптомы похмелья: слабость, тошноту, головную боль, дрожь, бессонницу.",
+      dx_l1: "Выезд по всему Таразу днём и ночью", dx_l2: "Перед процедурой — измерение давления, пульса и сахара",
+      dx_l3: "Медсестра остаётся рядом всё время капельницы", dx_l4: "Полная конфиденциальность, без постановки на учёт",
+      dx_warn: "При боли в груди, судорогах, потере сознания или галлюцинациях — сразу звоните в скорую помощь 103.",
+      fq1_q: "Сколько стоит детокс-капельница?", fq1_a: "От 15 000 ₸. Итоговая цена зависит от состава и количества препаратов — назовём её заранее по телефону.",
+      fq2_q: "Как быстро приедет медсестра?", fq2_a: "Выезжаем по всему Таразу круглосуточно. Точное время прибытия сообщим при звонке или в WhatsApp.",
+      fq3_q: "Это анонимно?", fq3_a: "Да. Мы никуда не передаём данные о вызове, процедура проходит у вас дома.",
+      fq4_q: "Сколько длится капельница?", fq4_a: "Обычно 40–90 минут. Всё это время медсестра рядом и следит за состоянием.",
       how_eyebrow: "Всё просто", how_title: "Как вызвать медсестру",
       st1_t: "Позвоните или напишите", st1_d: "По телефону или в WhatsApp — в любое время суток.",
       st2_t: "Согласуем детали", st2_d: "Уточним процедуру, препараты, адрес и стоимость.",
@@ -552,12 +648,13 @@
     },
     kz: {
       _title: "HomeMed24 — Таразда үйге мейірбике шақыру, 24/7",
+      _desc: "Таразда үйге мейірбике шақыру тәулік бойы: детокс-тамшылатқыш, маскүнемдіктен шығару, тамшылатқыш, ине салу, жараны таңу, төсекте жатқан науқастарға күтім. ☎ +7 707 453 7592",
       _wa: "Сәлеметсіз бе! Үйге мейірбике шақырғым келеді.",
       _from: "", _after: "бастап",
-      nav_services: "Қызметтер мен бағалар", nav_how: "Қалай шақыру", nav_edu: "Білімі", nav_contacts: "Байланыс",
+      nav_services: "Қызметтер мен бағалар", nav_detox: "Детокс", nav_how: "Қалай шақыру", nav_edu: "Білімі", nav_contacts: "Байланыс",
       hero_pill: "Тараз · тәулік бойы 24/7",
       hero_title: "Үйге мейірбике <em>Таразда</em>",
-      hero_lead: "Тамшылатқыш, ине салу, алкогольдік интоксикацияны басу, жараны таңу және төсекте жатқан науқастарға күтім — үйіңізде, күндіз-түні.",
+      hero_lead: "Тамшылатқыш, детокс және алкогольдік интоксикацияны басу, ине салу, жараны таңу және төсекте жатқан науқастарға күтім — үйіңізде, күндіз-түні.",
       btn_call: "Қоңырау шалу", btn_wa: "WhatsApp-қа жазу",
       stat_exp: "жыл тәжірибе", stat_247: "демалыссыз", stat_edu_b: "Жоғары", stat_edu: "мейірбикелік білім",
       card_title: "Неліктен бізді таңдайды",
@@ -566,13 +663,23 @@
       svc_eyebrow: "Баға тізімі", svc_title: "Қызметтер мен бағалар",
       svc_sub: "Тараз қаласы шегінде үйге барудың ең төменгі бағалары көрсетілген.",
       tag_247: "24/7",
-      s1_title: "Алкогольдік интоксикацияны басу", s1_desc: "Маскүнемдік пен бас ауру синдромын басуға арналған тамшылатқыш үйде. Анонимді.",
+      s1_title: "Детокс-тамшылатқыш және интоксикацияны басу", s1_desc: "Үйде маскүнемдіктен шығаруға және бас ауру синдромын басуға арналған тамшылатқыш. Анонимді.",
       s2_title: "Ине салу және тамшылатқыш", s2_im: "Бұлшықетке ине салу", s2_iv: "Көктамырға ине салу", s2_drip: "Үйде тамшылатқыш қою",
       s3_title: "Таңу және жараға күтім", s3_desc: "Жараны өңдеу, тігісті алу, ойық жараларды емдеу.",
       s4_title: "Төсекте жатқан науқастарға күтім", s4_desc: "Гигиена, катетер, қарттарға көмек. Бірнеше сағатқа немесе тәулікке шақыру.",
       s5_title: "Қан қысымы және қант", s5_desc: "Артериялық қысымды және қандағы қант деңгейін өлшеу.",
       s6_title: "Клизма", s6_desc: "Үйде тазарту клизмасы, ұқыпты әрі нәзік.",
       notice: "Қорытынды баға препараттардың санына байланысты жеке есептеледі.",
+      dx_eyebrow: "Анонимді · 24/7", dx_title: "Таразда үйде детокс-тамшылатқыш",
+      dx_sub: "Маскүнемдіктен шығару, бас ауруға қарсы тамшылатқыш және интоксикацияны басу — клиникаға бармай, кезексіз.",
+      dx_p1: "Тойдан кейін «тамшылатқыш қойғызу» немесе маскүнемдіктен шығу қажет болса, мейірбике тәуліктің кез келген уақытында үйіңізге келеді. Тамшылатқыш уыттарды шығаруға, су-тұз балансын қалпына келтіруге және әлсіздік, жүрек айну, бас ауыру, діріл, ұйқысыздық сияқты белгілерді басуға көмектеседі.",
+      dx_l1: "Тараздың барлық аудандарына күндіз-түні барамыз", dx_l2: "Процедура алдында қан қысымын, пульсті және қантты өлшейміз",
+      dx_l3: "Тамшылатқыш бойы мейірбике қасыңызда болады", dx_l4: "Толық құпиялылық, есепке қоймаймыз",
+      dx_warn: "Кеудеде ауырсыну, құрысу, есінен тану немесе елес көру болса — бірден 103 жедел жәрдемге хабарласыңыз.",
+      fq1_q: "Детокс-тамшылатқыш қанша тұрады?", fq1_a: "15 000 ₸-ден бастап. Қорытынды баға препараттардың құрамы мен санына байланысты — телефон арқылы алдын ала айтамыз.",
+      fq2_q: "Мейірбике қаншалықты тез келеді?", fq2_a: "Тараз бойынша тәулік бойы барамыз. Нақты келу уақытын қоңырау кезінде немесе WhatsApp арқылы хабарлаймыз.",
+      fq3_q: "Бұл анонимді ме?", fq3_a: "Иә. Шақыру туралы деректерді ешкімге бермейміз, процедура үйіңізде өтеді.",
+      fq4_q: "Тамшылатқыш қанша уақытқа созылады?", fq4_a: "Әдетте 40–90 минут. Осы уақыт бойы мейірбике қасыңызда болып, жағдайыңызды бақылайды.",
       how_eyebrow: "Бәрі оңай", how_title: "Мейірбикені қалай шақыруға болады",
       st1_t: "Қоңырау шалыңыз немесе жазыңыз", st1_d: "Телефон немесе WhatsApp арқылы — тәуліктің кез келген уақытында.",
       st2_t: "Мәліметтерді келісеміз", st2_d: "Процедураны, препараттарды, мекенжайды және бағаны нақтылаймыз.",
@@ -600,6 +707,8 @@
     var d = I18N[lang] || I18N.ru;
     document.documentElement.lang = lang === "kz" ? "kk" : "ru";
     document.title = d._title;
+    var md = document.querySelector('meta[name="description"]');
+    if (md) md.setAttribute("content", d._desc);
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var k = el.getAttribute("data-i18n");
@@ -619,6 +728,13 @@
     });
 
     try { localStorage.setItem("hm24-lang", lang); } catch (e) {}
+
+    // ?lang=kz — отдельный адрес казахской версии, чтобы её видели поисковики
+    try {
+      var u = new URL(location.href);
+      if (lang === "kz") u.searchParams.set("lang", "kz"); else u.searchParams.delete("lang");
+      history.replaceState(null, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
   }
 
   document.querySelectorAll(".lang button").forEach(function (b) {
@@ -629,6 +745,10 @@
 
   var saved = "ru";
   try { saved = localStorage.getItem("hm24-lang") || "ru"; } catch (e) {}
+  try {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q === "kz" || q === "ru") saved = q;
+  } catch (e) {}
   setLang(saved);
 </script>
 </body>
